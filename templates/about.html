@@ -1,0 +1,13 @@
+{% extends 'base\layout.html' %}
+{% load static %}
+{% block content %}
+<p class="text-primary">pooja hegde </p>
+<img src="{% static 'img/beauty-bloom-blue-67636.jpg'%}" alt="" width="150px" height="200px">
+
+<ol>
+    {% for i in 'hello' %}
+    <li>{{ i }}</li>
+    {% endfor %}
+
+</ol>
+{% endblock %}

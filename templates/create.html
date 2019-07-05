@@ -1,0 +1,11 @@
+{% extends 'base/layout.html' %}
+{% load static %}
+{% block userdefined %}
+<div class="container">
+    {% include 'base/forms.html' %}
+    <!-- <form action="" method="POST" class="mt-4">
+        {% csrf_token %}{{form.as_p}}
+        <input type="submit" value="Create" class="btn btn-success"></input>
+    </form> -->
+</div>
+{% endblock %}

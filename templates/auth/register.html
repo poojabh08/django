@@ -1,0 +1,32 @@
+{% extends 'base/layout.html' %}
+{% load static %}
+{% block userdefined %}
+<!-- <div class="container">
+    <h1>Login form</h1>
+    <form action="">
+        <div class="form-control">
+            <label for="name" value="Name"></label>
+            <input type="text" name="" id="">
+        </div>
+        <div class="form-control">
+            <label for="password" value="password"></label>
+            <input type="password" name="" id="">
+        </div>
+        <input type="submit" class="btn btn-success" value="Register">
+    </form>
+</div> -->
+<div class="container">
+    {% if registered %}
+        <h1>Thank you for registering!</h1>
+        {% else %}
+        <p class="h2 text-uppercase mb-3 text-center">Register</p>
+        <div class='row'>
+            <div class="col"></div>
+            <div class="col">
+                {% include 'base/forms.html' %}
+            </div>
+            <div class="col"></div>
+        </div>
+        {% endif %}
+</div>
+{% endblock %}
